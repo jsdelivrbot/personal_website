@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style/contact.css">
+  </head>
+  <body>
+    <header>
+      <title>Contact Me</title>
+      <div id="upper-logo">
+        <a href="./about.html">
+          <img src="./images/meili.jpg" alt="upperlogo">
+        </a>
+      </div>
+    </header>
+    <nav class="main-nav">
+        <ul>
+          <li class="page-collection"></li>
+            <a href="./about.html">HOME</a>
+            <li class="page-collection"></li>
+            <a href="./gallery.html">GALLERY</a>
+            <li class="page-collection"></li>
+            <a href="./contact.html">CONTACT</a>
+      </ul>
+    </nav>
+    <div class="center">Contact Me!
+    </div>
+    <form
+    action="https://script.google.com/macros/s/AKfycbz9bSWgp1XVywSvtT5r_ZOM_72ySsQmNgm9Ddkl_S1_iVjvtsa6/exec"
+    method="POST"
+    enctype="multipart/form-data"
+    name="ContactForm"
+    id="gform">
+
+    <p>Your Name:</p><br>
+    <input type="text" placeholder="First Name, Last Name" size="30" name="name"><br><br>
+
+    <p>E-mail:</p><br>
+    <input type="text" placeholder="ie: abc@gmail.com" size="30" name="email"><br><br>
+
+    <p>Your Comment:</p><br>
+    <textarea name="comments" rows="20" cols="60">
+    </textarea><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+    <div id="thankyou_message">Thank You! I will contact you soon!</div>
+    <script data-cfasync="false" type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+    </script>
+  </body>
+</html>
